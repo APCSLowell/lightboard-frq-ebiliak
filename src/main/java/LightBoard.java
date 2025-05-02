@@ -12,12 +12,12 @@ public class LightBoard
   {
     lights = new Boolean[numRows][numCols];
     for(int r = 0; r < numRows; r++){
-      for(int c = 0; c < numCols){
+      for(int c = 0; c < numCols; c++){
         if(math.random()*1 <= 0.4){
-          lights[r][c] == true;
+          lights[r][c] = true;
         }
         else{
-          lights[r][c] == false;
+          lights[r][c] = false;
         }
       }
 
@@ -32,7 +32,7 @@ public class LightBoard
    int ison = 0;
     for(int r = 0; r <lights.length; r++){
       if(lights[r][col] == true){
-        ison++
+        ison++;
           }
       if(lights[row][col] == true && r % 2 == 0){
         return false;
