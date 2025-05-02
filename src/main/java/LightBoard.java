@@ -10,10 +10,10 @@ public class LightBoard
    */
   public LightBoard(int numRows, int numCols)
   {
-    lights = new Boolean[numRows][numCols];
+    lights = new boolean[numRows][numCols];
     for(int r = 0; r < numRows; r++){
       for(int c = 0; c < numCols; c++){
-        if(math.random()*1 <= 0.4){
+        if(math.random() <= 0.4){
           lights[r][c] = true;
         }
         else{
@@ -35,7 +35,7 @@ public class LightBoard
         ison++;
           }
     }
-      if(lights[row][col] == true && r % 2 == 0){
+      if(lights[row][col] == true && ison % 2 == 0){
         return false;
       }
       if(lights[row][col] == false && ison % 3 == 0){
