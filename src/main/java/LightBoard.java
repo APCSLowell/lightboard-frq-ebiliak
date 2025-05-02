@@ -34,6 +34,7 @@ public class LightBoard
       if(lights[r][col] == true){
         ison++;
           }
+    }
       if(lights[row][col] == true && r % 2 == 0){
         return false;
       }
