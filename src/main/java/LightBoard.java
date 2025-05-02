@@ -42,7 +42,7 @@ public class LightBoard
         return true;
       }
       return lights[row][col];
-    }
+    
    
  
   }
